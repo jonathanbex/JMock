@@ -5,32 +5,41 @@ namespace JMock.HttpResponses
 {
   public static class HttpResponseHelper
   {
-    public static HttpResponseMessage ConstructOkRequest()
+    public static HttpResponseMessage ConstructOkRequest(string? content = null)
     {
       return new HttpResponseMessageBuilder()
      .SetStatus(HttpStatusCode.OK)
-     .SetContent(new StringContent("Request was successful."))
+     .SetContent(new StringContent(content ?? "Request was successful."))
      .Build();
     }
-    public static HttpResponseMessage ConstructBadRequest()
+    public static HttpResponseMessage ConstructBadRequest(string? content = null)
     {
       return new HttpResponseMessageBuilder()
           .SetStatus(HttpStatusCode.BadRequest)
-          .SetContent(new StringContent("The request was invalid or cannot be otherwise served."))
+          .SetContent(new StringContent(content ?? "The request was invalid or cannot be otherwise served."))
           .Build();
     }
-    public static HttpResponseMessage ConstructNotFoundRequest()
+
+    public static HttpResponseMessage ConstructUnauthorizedRequest(string? content = null)
+    {
+      return new HttpResponseMessageBuilder()
+          .SetStatus(HttpStatusCode.Unauthorized)
+          .SetContent(new StringContent(content ?? "Authorization has been denied for this request."))
+          .Build();
+    }
+
+    public static HttpResponseMessage ConstructNotFoundRequest(string? content = null)
     {
       return new HttpResponseMessageBuilder()
            .SetStatus(HttpStatusCode.NotFound)
-           .SetContent(new StringContent("The requested resource could not be found."))
+           .SetContent(new StringContent(content ?? "The requested resource could not be found."))
            .Build();
     }
-    public static HttpResponseMessage ConstructInternalErrorRequest()
+    public static HttpResponseMessage ConstructInternalErrorRequest(string? content = null)
     {
       return new HttpResponseMessageBuilder()
           .SetStatus(HttpStatusCode.InternalServerError)
-          .SetContent(new StringContent("An error occurred on the server and the request could not be completed."))
+          .SetContent(new StringContent(content ?? "An error occurred on the server and the request could not be completed."))
           .Build();
     }
   }
