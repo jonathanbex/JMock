@@ -1,7 +1,7 @@
 ﻿using JMock.Builders.Http;
 using System.Net;
 
-namespace JMock.HttpRespones
+namespace JMock.HttpResponses
 {
   public static class HttpResponseHelper
   {
