@@ -15,7 +15,7 @@ Alfa being currently built :) </Description>
     <PackageProjectUrl>https://github.com/jonathanbex/JMock</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>0.1</Version>
+    <Version>0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
