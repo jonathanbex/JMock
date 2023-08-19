@@ -1,2 +1,2 @@
 # JMock
-Mocking Library for .net
+Mocking Library for .Net
