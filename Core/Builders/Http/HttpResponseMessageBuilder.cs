@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Net.Http.Headers;
 
-namespace JMock.Builders.Http
+namespace JMock.Core.Builders.Http
 {
   public class HttpResponseMessageBuilder
   {

@@ -1,6 +1,6 @@
-﻿using JMock.Database.DBSet;
+﻿using JMock.Core.Database.DBSet;
 using Microsoft.EntityFrameworkCore;
-namespace JMock.Database
+namespace JMock.Core.Database
 {
   /// <summary>
   /// Extend this and use FakeDbSet for your own Context

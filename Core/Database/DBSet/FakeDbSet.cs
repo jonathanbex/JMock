@@ -1,15 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata;
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace JMock.Database.DBSet
+namespace JMock.Core.Database.DBSet
 {
   public class FakeDbSet<T> : DbSet<T>, IQueryable<T>, IEnumerable<T> where T : class
   {

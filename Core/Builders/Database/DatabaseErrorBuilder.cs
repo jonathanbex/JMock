@@ -1,7 +1,7 @@
-﻿using JMock.Database.Exceptions;
+﻿using JMock.Core.Database.Exceptions;
 using System.Data.Common;
 
-namespace JMock.Builders.Database
+namespace JMock.Core.Builders.Database
 {
   public class DatabaseErrorBuilder
   {

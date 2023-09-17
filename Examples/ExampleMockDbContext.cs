@@ -1,10 +1,10 @@
-﻿using JMock.Database;
-using JMock.Database.DBSet;
+﻿using JMock.Core.Database;
+using JMock.Core.Database.DBSet;
 using Microsoft.EntityFrameworkCore;
 
 namespace JMock.Examples
 {
-  public class ExampleMockDbContext : JMockDbContext
+    public class ExampleMockDbContext : JMockDbContext
   {
     public DbSet<FakeModel> FakeModel { get; set; }
     public ExampleMockDbContext()

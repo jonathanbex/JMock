@@ -1,7 +1,7 @@
-﻿using JMock.Builders.Database;
+﻿using JMock.Core.Builders.Database;
 using System.Data.Common;
 
-namespace JMock.Database
+namespace JMock.Core.Database
 {
   public static class DBConnectionErrorMock { 
 

@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace JMock.Http.HttpMsgHandler
+namespace JMock.Core.Http.HttpMsgHandler
 {
   public class MockHttpMessageHandler : HttpMessageHandler
   {

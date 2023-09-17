@@ -1,6 +1,6 @@
 ﻿using System.Data.Common;
 
-namespace JMock.Database.Exceptions
+namespace JMock.Core.Database.Exceptions
 {
   public class CustomDbException : DbException
   {

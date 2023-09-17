@@ -1,4 +1,4 @@
-﻿namespace JMock.Http.Client
+﻿namespace JMock.Core.Http.Client
 {
   public class MockHttpClient
   {

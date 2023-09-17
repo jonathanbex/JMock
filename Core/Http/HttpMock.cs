@@ -1,7 +1,7 @@
-﻿using JMock.Http.HttpMsgHandler;
-using JMock.Http.HttpResponses;
+﻿using JMock.Core.Http.HttpMsgHandler;
+using JMock.Core.Http.HttpResponses;
 
-namespace JMock.Http
+namespace JMock.Core.Http
 {
   public static class HttpMock
   {
